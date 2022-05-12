@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.2.15)  12 MAY 2022 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.2.15)  12 MAY 2022 19:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -699,43 +699,88 @@ Package pdftex.def Info: final_mask.png  used on input line 116.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
-<gauss_blur_1.png, id=81, 592.2125pt x 580.1675pt>
+<zoomed.png, id=81, 619.31375pt x 482.80376pt>
+File: zoomed.png Graphic file (type png)
+<use zoomed.png>
+Package pdftex.def Info: zoomed.png  used on input line 151.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<gauss_blur_1.png, id=83, 619.31375pt x 482.80376pt>
 File: gauss_blur_1.png Graphic file (type png)
 <use gauss_blur_1.png>
-Package pdftex.def Info: gauss_blur_1.png  used on input line 154.
-(pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<gauss_blur_2.png, id=82, 592.2125pt x 580.1675pt>
+Package pdftex.def Info: gauss_blur_1.png  used on input line 166.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<gauss_blur_2.png, id=84, 619.31375pt x 482.80376pt>
 File: gauss_blur_2.png Graphic file (type png)
 <use gauss_blur_2.png>
-Package pdftex.def Info: gauss_blur_2.png  used on input line 157.
-(pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<gauss_blur_4.png, id=83, 592.2125pt x 580.1675pt>
+Package pdftex.def Info: gauss_blur_2.png  used on input line 169.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<gauss_blur_4.png, id=85, 619.31375pt x 482.80376pt>
 File: gauss_blur_4.png Graphic file (type png)
 <use gauss_blur_4.png>
-Package pdftex.def Info: gauss_blur_4.png  used on input line 161.
-(pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<gauss_blur_8.png, id=84, 592.2125pt x 580.1675pt>
+Package pdftex.def Info: gauss_blur_4.png  used on input line 173.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<gauss_blur_8.png, id=86, 619.31375pt x 482.80376pt>
 File: gauss_blur_8.png Graphic file (type png)
 <use gauss_blur_8.png>
-Package pdftex.def Info: gauss_blur_8.png  used on input line 164.
-(pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
- [3 <./gauss_blur_1.png> <./gauss_blur_2.png> <./gauss_blur_4.png> <./gauss_blur_8.png>] [4] [5 <./nuclei_mask.png> <./cytoplasm_mask.png> <./combined_mask.png> <./final_mask.png>] (./writeup.aux)
+Package pdftex.def Info: gauss_blur_8.png  used on input line 176.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_1_1.png, id=88, 619.31375pt x 482.80376pt>
+File: zoomed_texture_1_1.png Graphic file (type png)
+<use zoomed_texture_1_1.png>
+Package pdftex.def Info: zoomed_texture_1_1.png  used on input line 191.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_1_2.png, id=89, 619.31375pt x 482.80376pt>
+File: zoomed_texture_1_2.png Graphic file (type png)
+<use zoomed_texture_1_2.png>
+Package pdftex.def Info: zoomed_texture_1_2.png  used on input line 194.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_2_1.png, id=90, 619.31375pt x 482.80376pt>
+File: zoomed_texture_2_1.png Graphic file (type png)
+<use zoomed_texture_2_1.png>
+Package pdftex.def Info: zoomed_texture_2_1.png  used on input line 198.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_2_2.png, id=91, 619.31375pt x 482.80376pt>
+File: zoomed_texture_2_2.png Graphic file (type png)
+<use zoomed_texture_2_2.png>
+Package pdftex.def Info: zoomed_texture_2_2.png  used on input line 201.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_4_1.png, id=92, 619.31375pt x 482.80376pt>
+File: zoomed_texture_4_1.png Graphic file (type png)
+<use zoomed_texture_4_1.png>
+Package pdftex.def Info: zoomed_texture_4_1.png  used on input line 205.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_4_2.png, id=93, 619.31375pt x 482.80376pt>
+File: zoomed_texture_4_2.png Graphic file (type png)
+<use zoomed_texture_4_2.png>
+Package pdftex.def Info: zoomed_texture_4_2.png  used on input line 208.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_8_1.png, id=94, 619.31375pt x 482.80376pt>
+File: zoomed_texture_8_1.png Graphic file (type png)
+<use zoomed_texture_8_1.png>
+Package pdftex.def Info: zoomed_texture_8_1.png  used on input line 212.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+<zoomed_texture_8_2.png, id=95, 619.31375pt x 482.80376pt>
+File: zoomed_texture_8_2.png Graphic file (type png)
+<use zoomed_texture_8_2.png>
+Package pdftex.def Info: zoomed_texture_8_2.png  used on input line 215.
+(pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
+ [3 <./zoomed.png> <./gauss_blur_1.png> <./gauss_blur_2.png> <./gauss_blur_4.png> <./gauss_blur_8.png>] [4 <./zoomed_texture_1_1.png> <./zoomed_texture_1_2.png> <./zoomed_texture_2_1.png> <./zoomed_texture_2_2.png> <./zoomed_texture_4_1.png> <./zoomed_texture_4_2.png> <./zoomed_texture_8_1.png> <./zoomed_texture_8_2.png>] [5] [6 <./nuclei_mask.png> <./cytoplasm_mask.png> <./combined_mask.png> <./final_mask.png>] (./writeup.aux)
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: 01B11279BE70A3F8E3C385E2C64DA30A;1044.
  ) 
 Here is how much of TeX's memory you used:
- 24933 strings out of 479729
- 462370 string characters out of 5880774
- 722834 words of memory out of 5000000
- 42438 multiletter control sequences out of 15000+600000
+ 25010 strings out of 479729
+ 464136 string characters out of 5880774
+ 723938 words of memory out of 5000000
+ 42495 multiletter control sequences out of 15000+600000
  482525 words of font info for 76 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  99i,10n,94p,554b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on writeup.pdf (5 pages, 2322747 bytes).
+Output written on writeup.pdf (6 pages, 4128618 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

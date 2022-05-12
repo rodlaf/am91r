@@ -44,7 +44,7 @@ what. Current methods such as software like MetaXpress are effective but there i
 machine learning may be way better at the identification. The method outlined in this paper is
 inspired by Ilatisk, albeit with different methods to handle false positives. Images analyzed in
 this project were of these nucleocaspids under three different wavelengths. These three wavelengths
-are visualized in Figure~\ref{fig:wavelengths} for an example image.
+are visualized in Figure~\ref{fig:wavelengths} for an example image (KRD-211028-p5\_G24\_s4).
 
 \begin{figure}[H]
     \centering
@@ -142,6 +142,18 @@ information on that data prior to discerning between different classes for each 
 
 \subsection{Results}
 
+Figure~\ref{fig:zoomed} shows a zoomed-in portion of an example well site.
+
+\begin{figure}[H]
+    \centering
+    {
+        {
+            \includegraphics[width=0.3\textwidth]{zoomed.png}
+        }  
+    }\caption{Zoomed Portion of Well Site}
+    \label{fig:zoomed}
+\end{figure}
+
 Figure~\ref{fig:gaussian_blurring} shows the outcome of applying several blurring filters to an 
 example well site.
 
@@ -165,6 +177,45 @@ example well site.
         }
     }\caption{Gaussian Blurring Filters}
     \label{fig:gaussian_blurring}
+\end{figure}
+
+Figure~\ref{fig:texture} shows the outcome of applying several blurring filters to an 
+example well site.
+
+\begin{figure}[H]
+    \centering
+    {
+        {
+            \subfloat[$\sigma=1$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_1_1.png}
+            }
+            \subfloat[$\sigma=2$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_1_2.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=1$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_2_1.png}
+            }
+            \subfloat[$\sigma=2$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_2_2.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=1$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_4_1.png}
+            }
+            \subfloat[$\sigma=2$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_4_2.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=1$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_8_1.png}
+            }
+            \subfloat[$\sigma=2$]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_8_2.png}
+            }
+        }
+    }\caption{Texture Filters}
+    \label{fig:texture}
 \end{figure}
 
 
