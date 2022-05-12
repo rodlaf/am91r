@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{parskip}
+\usepackage{subfig}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{todonotes}
+\usepackage{listings}
+\usepackage{common}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{soul}
+\usepackage{framed}
+\usepackage{pythonhighlight}
+\usepackage{common}
+\usepackage{booktabs}
+
+\title{Supervised Machine Learning for Biomolecular Condensate Quantification and Measurement}
+\author{Rodney Lafuente Mercado \\ lafuentemercado@college.harvard.edu}
+\date{May 4, 2022}
+\begin{document}
+
+\maketitle{}
+
+\begin{abstract}
+\noindent This report details the background, approach, and process of applying supervised machine
+learning methods for identification of biomolecular condensates in SARS-CoV-2 nuclecaspids. The
+report covers not only the feature and model selection of the process but also the stuff regarding
+splitting and segmenting and filtering as well.
+\end{abstract}
+
+\section{Background}
+
+The motivation behind this project is to quantify the effect of different compounds on condensate
+formation in SARS-CoV-2 nucleocaspids. This is part of a larger study in what things affect what in
+what. Current methods such as software like MetaXpress are effective but there is suspicion that
+machine learning may be way better at the identification. The method outlined in this paper is
+inspired by Ilatisk, albeit with different methods to handle false positives. Images analyzed in
+this project were of these nucleocaspids under three different wavelengths. These three wavelengths
+are visualized in Figure~\ref{fig:wavelengths} for an example image.
+
+\begin{figure}[H]
+    \centering
+    {
+        \subfloat[Wavelength 1]{
+            \includegraphics[width=0.3\textwidth]{wavelength_1.png}
+        }
+        \subfloat[Wavelength 2]{
+            \includegraphics[width=0.3\textwidth]{wavelength_2.png}
+        }
+        \subfloat[Wavelength 3]{
+            \includegraphics[width=0.3\textwidth]{wavelength_3.png}
+        }
+    }\caption{Example of Well Site Wavelengths}
+    \label{fig:wavelengths}
+\end{figure}
+
+\noindent the wavelengths displayed each play a different purpose as is illustrated below. This
+report will split the process into three sections, namely the approach to cell segmentation, feature
+selection, and model selection. 
+
+
+\section{Cell Segmentation}
+
+Machine learning methods in the approach outlined in this report work only to classify pixels as
+belonging to a biomolecular condensate or not. An additional component in the process of identifying
+and measuring condensates is to identify areas of interest in an image, namely, differing regions
+that belong to cells. Once these regions of interest are identified, condensates located in these
+regions, and only in these regions, can be quantified.
+
+\subsection{Approach}
+
+Cell segmentation was accomplished using watershed segmentation, an algorithm that takes as input
+binary images that it treats as topological maps such that they are flooded in order to find the
+proper separation between regions. This method, as well as all other methods outlined in this
+report, are implemented using the ScikitImage and ScikitLearn Python libraries. For identifying
+separate regions, a mask identifying nuclei was used. For identifying regions containing cytoplasm,
+a mask identifying cytoplasm was used. 
+
+The masking process, an example of which can be seen below, involves the computation of a certain
+threshold that must be high enough such that only pixels of a desirable intensity are retained. The
+method for nuclei mask creation was to use Otsu's method of thresholding. This method aims to
+minimize the variance between . The two thresholding methods were chosen by applying a variety of
+different thresholding mechanisms to the images and picking the ones best differentiating between
+cells in the end. 
+
+\begin{figure}[h]
+    \centering
+    {
+        \subfloat[Wavelength 1]{
+            \includegraphics[width=0.3\textwidth]{wavelength_1.png}
+        }
+        \subfloat[Nuclei Mask]{
+            \includegraphics[width=0.3\textwidth]{nuclei_mask.png}
+        }
+    }\hfill{
+        \subfloat[Wavelength 3]{
+            \includegraphics[width=0.3\textwidth]{wavelength_3.png}
+        }
+        \subfloat[Cytoplasm Mask]{
+            \includegraphics[width=0.3\textwidth]{cytoplasm_mask.png}
+        }
+    }\hfill{
+        \subfloat[Segmented Cells (Nuclei for clarity)]{
+            \includegraphics[width=0.3\textwidth]{combined_mask.png}
+        }
+        \subfloat[Resulting Mask (Border and Outlier Cells Removed)]{
+            \includegraphics[width=0.3\textwidth]{final_mask.png}
+        }
+    }\caption{Full Masking Process}
+    \label{fig:masking_process}
+\end{figure}
+
+\subsection{Results}
+
+Figure~\ref{fig:masking_process} displays the full masking process, save for a step that removes
+cells from the mask that overlap with the an outlier mask  
+
+This method was accurate enough to meaningfully separate condensates by which cells they belonged
+to, but definitely had its drawbacks. While this method was not perfect for this perfect, it is
+difficult to imagine a better method given the difficulty of segmenting cells by hand; boundaries
+between cells are, more often than not, not clear in the images in which they are presented. 
+
+\section{Feature Selection}
+Classification of pixels into condensate and non-condensate regions requires not only a labeled data
+set of pixels but also a way of determining which properties of those pixels are to be used for
+classification purposes. For this model, we ran two different types of features: Gaussian Blurring,
+for determining intensity at the pixel and in areas surrounding the pixel, as well as eigenvalues of
+the Hessian matrix 
+
+\subsection{Approach}
+
+Supervised machine learning requires not only a labeled data set but also a method of extrapolating
+information on that data prior to discerning between different classes for each of the data points. 
+
+\subsection{Results}
+
+Figure~\ref{fig:gaussian_blurring} shows the outcome of applying several blurring filters to an 
+example well site.
+
+\begin{figure}[H]
+    \centering
+    {
+        {
+            \subfloat[$\sigma=1$]{
+                \includegraphics[width=0.3\textwidth]{gauss_blur_1.png}
+            }
+            \subfloat[$\sigma=2$]{
+                \includegraphics[width=0.3\textwidth]{gauss_blur_2.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=4$]{
+                \includegraphics[width=0.3\textwidth]{gauss_blur_4.png}
+            }
+            \subfloat[$\sigma=8$]{
+                \includegraphics[width=0.3\textwidth]{gauss_blur_8.png}
+            }
+        }
+    }\caption{Gaussian Blurring Filters}
+    \label{fig:gaussian_blurring}
+\end{figure}
+
+
+\section{Model Selection}
+
+Ilastik, the software that implements similar machine learning techniques for pixel classification,
+uses random forest classifiers. We opted for this same model class for our dataset given that RFCs
+are effective in modeling distinctions in data points from data sets of limited length.
+
+\subsection{Approach}
+
+What did you do? When relevant, provide mathematical descriptions or pseudocode. Credit will be
+given for:
+
+\subsection{Results}
+
+This section should report on the following questions: 
+
+\end{document}

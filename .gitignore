@@ -1,0 +1,10 @@
+// macos
+.DS_Store
+
+// notebook checkpoints
+.ipynb_checkpoints
+
+// datasets
+-condensates_11757-11758_polyICno
++condensates_11757-11758_polyICyes
+KRD-MOA-OC43-220310-3720-22-1_Plate_13187
