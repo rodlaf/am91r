@@ -91,7 +91,13 @@ minimize the variance between . The two thresholding methods were chosen by appl
 different thresholding mechanisms to the images and picking the ones best differentiating between
 cells in the end. 
 
-\begin{figure}[h]
+\subsection{Results}
+
+Figure~\ref{fig:masking_process} displays the full masking process, save for a step that removes
+cells from the mask that overlap with the an outlier mask. This step is visualized using a different
+example image in Figure~\ref{fig:outlier_removal}.
+
+\begin{figure}[H]
     \centering
     {
         \subfloat[Wavelength 1]{
@@ -118,10 +124,26 @@ cells in the end.
     \label{fig:masking_process}
 \end{figure}
 
-\subsection{Results}
+\begin{figure}[H]
+    \centering
+    {
+        \subfloat[Wavelength 1]{
+            \includegraphics[width=0.3\textwidth]{bright_wellsite.png}
+        }
+        \subfloat[Nuclei Mask]{
+            \includegraphics[width=0.3\textwidth]{bright_wellsite_outlier.png}
+        }
+    }\hfill{
+        \subfloat[Wavelength 3]{
+            \includegraphics[width=0.3\textwidth]{bright_wellsite_premask.png}
+        }
+        \subfloat[Cytoplasm Mask]{
+            \includegraphics[width=0.3\textwidth]{bright_wellsite_mask.png}
+        }
+    }\caption{Full Masking Process}
+    \label{fig:outlier_removal}
+\end{figure}
 
-Figure~\ref{fig:masking_process} displays the full masking process, save for a step that removes
-cells from the mask that overlap with the an outlier mask  
 
 This method was accurate enough to meaningfully separate condensates by which cells they belonged
 to, but definitely had its drawbacks. While this method was not perfect for this perfect, it is
@@ -142,18 +164,6 @@ information on that data prior to discerning between different classes for each 
 
 \subsection{Results}
 
-Figure~\ref{fig:zoomed} shows a zoomed-in portion of an example well site.
-
-\begin{figure}[H]
-    \centering
-    {
-        {
-            \includegraphics[width=0.3\textwidth]{zoomed.png}
-        }  
-    }\caption{Zoomed Portion of Well Site}
-    \label{fig:zoomed}
-\end{figure}
-
 Figure~\ref{fig:gaussian_blurring} shows the outcome of applying several blurring filters to an 
 example well site.
 
@@ -161,6 +171,10 @@ example well site.
     \centering
     {
         {
+            \subfloat[Regular Image]{
+                \includegraphics[width=0.3\textwidth]{zoomed.png}
+            }
+        }\hfill{
             \subfloat[$\sigma=1$]{
                 \includegraphics[width=0.3\textwidth]{gauss_blur_1.png}
             }
@@ -179,42 +193,74 @@ example well site.
     \label{fig:gaussian_blurring}
 \end{figure}
 
-Figure~\ref{fig:texture} shows the outcome of applying several blurring filters to an 
+Figure~\ref{fig:hessian} shows the outcome of extracting the hessian filters from an 
 example well site.
 
 \begin{figure}[H]
     \centering
     {
         {
-            \subfloat[$\sigma=1$]{
+            \subfloat[Regular Image]{
+                \includegraphics[width=0.3\textwidth]{zoomed.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=4$, XX]{
+                \includegraphics[width=0.3\textwidth]{zoomed_hessian_xx.png}
+            }
+            \subfloat[$\sigma=4$, XY]{
+                \includegraphics[width=0.3\textwidth]{zoomed_hessian_xy.png}
+            }
+            \subfloat[$\sigma=4$, YY]{
+                \includegraphics[width=0.3\textwidth]{zoomed_hessian_yy.png}
+            }
+        }\hfill{
+            \subfloat[$\sigma=4$, Smaller Eigenvalues]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_4_1.png}
+            }
+            \subfloat[$\sigma=4$, Larger Eigenvalues]{
+                \includegraphics[width=0.3\textwidth]{zoomed_texture_4_2.png}
+            }
+        }
+    }\caption{Hessian Matrices}
+    \label{fig:hessian}
+\end{figure}
+
+Figure~\ref{fig:texture} shows the outcome of applying several texture filters to an 
+example well site.
+
+\begin{figure}[H]
+    \centering
+    {
+        {
+            \subfloat[$\sigma=1$, Smaller Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_1_1.png}
             }
-            \subfloat[$\sigma=2$]{
+            \subfloat[$\sigma=1$, Larger Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_1_2.png}
             }
         }\hfill{
-            \subfloat[$\sigma=1$]{
+            \subfloat[$\sigma=2$, Smaller Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_2_1.png}
             }
-            \subfloat[$\sigma=2$]{
+            \subfloat[$\sigma=2$, Larger Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_2_2.png}
             }
         }\hfill{
-            \subfloat[$\sigma=1$]{
+            \subfloat[$\sigma=4$, Smaller Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_4_1.png}
             }
-            \subfloat[$\sigma=2$]{
+            \subfloat[$\sigma=4$, Larger Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_4_2.png}
             }
         }\hfill{
-            \subfloat[$\sigma=1$]{
+            \subfloat[$\sigma=8$, Smaller Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_8_1.png}
             }
-            \subfloat[$\sigma=2$]{
+            \subfloat[$\sigma=8$, Larger Eigenvalues]{
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_8_2.png}
             }
         }
-    }\caption{Texture Filters}
+    }\caption{Full Range of Texture Filters}
     \label{fig:texture}
 \end{figure}
 
