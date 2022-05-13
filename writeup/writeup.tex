@@ -128,6 +128,22 @@ example image in Figure~\ref{fig:outlier_removal}.
     \centering
     {
         \subfloat[Wavelength 1]{
+            \includegraphics[width=0.5\textwidth]{bright_spot.png}
+        }
+    }
+    {
+        \subfloat[Wavelength 3]{
+            \includegraphics[width=0.5\textwidth]{bright_spot_labels.png}
+        }
+    }\caption{Bright Spot and Effect}
+    \label{fig:bright_spot}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    {
+        \subfloat[Wavelength 1]{
             \includegraphics[width=0.3\textwidth]{bright_wellsite.png}
         }
         \subfloat[Nuclei Mask]{
@@ -140,7 +156,7 @@ example image in Figure~\ref{fig:outlier_removal}.
         \subfloat[Cytoplasm Mask]{
             \includegraphics[width=0.3\textwidth]{bright_wellsite_mask.png}
         }
-    }\caption{Full Masking Process}
+    }\caption{Outlier Removal Process}
     \label{fig:outlier_removal}
 \end{figure}
 
@@ -204,13 +220,13 @@ example well site.
                 \includegraphics[width=0.3\textwidth]{zoomed.png}
             }
         }\hfill{
-            \subfloat[$\sigma=4$, XX]{
+            \subfloat[$\sigma=4$, Hxx]{
                 \includegraphics[width=0.3\textwidth]{zoomed_hessian_xx.png}
             }
-            \subfloat[$\sigma=4$, XY]{
+            \subfloat[$\sigma=4$, Hxy]{
                 \includegraphics[width=0.3\textwidth]{zoomed_hessian_xy.png}
             }
-            \subfloat[$\sigma=4$, YY]{
+            \subfloat[$\sigma=4$, Hyy]{
                 \includegraphics[width=0.3\textwidth]{zoomed_hessian_yy.png}
             }
         }\hfill{
@@ -221,7 +237,7 @@ example well site.
                 \includegraphics[width=0.3\textwidth]{zoomed_texture_4_2.png}
             }
         }
-    }\caption{Hessian Matrices}
+    }\caption{Gradients and Hessian Eigenvalues}
     \label{fig:hessian}
 \end{figure}
 
@@ -277,7 +293,91 @@ What did you do? When relevant, provide mathematical descriptions or pseudocode.
 given for:
 
 \subsection{Results}
+\begin{figure}[H]
+    \centering
+    {
+        {
+            \subfloat[Drawn Labels]{
+                \includegraphics[width=0.5\textwidth]{y_true.png}
+            }
+        }
+        {
+            \subfloat[Prediction Result]{
+                \includegraphics[width=0.5\textwidth]{y_pred.png}
+            }
+        }
+    }\caption{True and Predicted Labels}
+    \label{fig:labels}
+\end{figure}
 
-This section should report on the following questions: 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llrrr}
+        \toprule
+        \# Estimators & & Intensity Features & Texture Features & Overall Rank \\
+        \midrule
+        \textsc{360} & & 0.9813 & 0.9811 & 5 \\
+        \textsc{400} & & 0.9816 & 0.9813 & 3 \\
+        \textsc{440} & & 0.9818 & 0.9814 & 4 \\
+        \textsc{480} & & 0.9807 & 0.9816 & 1 \\
+        \textsc{520} & & 0.9814 & 0.9811 & 1 \\
+        \bottomrule
+    \end{tabular}
+    \caption{\label{tab:rf_search_results} Balanced Accuracies of Random Forest Models of Varying Estimator Counts}
+\end{table}
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llrrr}
+        \toprule
+        C Value & & Intensity Features & Texture Features & Overall Rank \\
+        \midrule
+        \textsc{0.001} & & 0.8388 & 0.8839 & 5 \\
+        \textsc{0.01}  & & 0.8865 & 0.9330 & 4 \\
+        \textsc{0.1}   & & 0.9257 & 0.9513 & 3 \\
+        \textsc{1}     & & 0.9513 & 0.9611 & 2 \\
+        \textsc{10}    & & 0.9701 & 0.9677 & 1 \\
+        \bottomrule
+    \end{tabular}
+    \caption{\label{tab:svm_search_results} Balanced Accuracies of Support Vector Machine Models of Varying C Values}
+\end{table}
+
+The results suggest that there is not much benefit to applying filters intended to identify edges
+and texture like we did above. This is a surprising result, as virtually all traditional methods
+(e.g., no machine learning) in image processing that are used to identify blobs and other features in
+images rely on heavy filtering techniques. As for the accuracy of the results, the pixel
+classification suggests that the methods are accurate in differentiating between pixels belonging to
+and not belonging to condensates.
+
+\subsection{Results}
+The predictions performed as expected.
+
+\begin{figure}[H]
+    \centering
+    {
+        {
+            {
+                \includegraphics[width=0.9\textwidth]{overlayed.png}
+            }
+        }
+    }\caption{Mask Overlapped with Predicted Labels}
+    \label{fig:overlayed}
+\end{figure}
+
+Figure~\ref{fig:overlayed} shows the overlap of a filter on top of an image
+with labeled condensates highlighted in red.
+
+\subsection{Results}
+\begin{figure}[H]
+    \centering
+    {
+        {
+            {
+                \includegraphics[width=0.7\textwidth]{well_results.png}
+            }
+        }
+    }\caption{Counts of Wells of Different added Compounds}
+    \label{fig:well_results}
+\end{figure}
 
 \end{document}

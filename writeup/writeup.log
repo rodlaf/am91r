@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.2.15)  12 MAY 2022 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.2.15)  13 MAY 2022 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -648,17 +648,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
  (/usr/local/texlive/2021basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<wavelength_1.png, id=48, 865.2325pt x 853.1875pt>
+<wavelength_1.png, id=56, 865.2325pt x 853.1875pt>
 File: wavelength_1.png Graphic file (type png)
 <use wavelength_1.png>
 Package pdftex.def Info: wavelength_1.png  used on input line 54.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<wavelength_2.png, id=50, 865.2325pt x 853.1875pt>
+<wavelength_2.png, id=58, 865.2325pt x 853.1875pt>
 File: wavelength_2.png Graphic file (type png)
 <use wavelength_2.png>
 Package pdftex.def Info: wavelength_2.png  used on input line 57.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<wavelength_3.png, id=51, 865.2325pt x 853.1875pt>
+<wavelength_3.png, id=59, 865.2325pt x 853.1875pt>
 File: wavelength_3.png Graphic file (type png)
 <use wavelength_3.png>
 Package pdftex.def Info: wavelength_3.png  used on input line 60.
@@ -670,7 +670,7 @@ File: wavelength_1.png Graphic file (type png)
 <use wavelength_1.png>
 Package pdftex.def Info: wavelength_1.png  used on input line 105.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<nuclei_mask.png, id=72, 865.2325pt x 853.1875pt>
+<nuclei_mask.png, id=80, 865.2325pt x 853.1875pt>
 File: nuclei_mask.png Graphic file (type png)
 <use nuclei_mask.png>
 Package pdftex.def Info: nuclei_mask.png  used on input line 108.
@@ -679,154 +679,188 @@ File: wavelength_3.png Graphic file (type png)
 <use wavelength_3.png>
 Package pdftex.def Info: wavelength_3.png  used on input line 112.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<cytoplasm_mask.png, id=73, 865.2325pt x 853.1875pt>
+<cytoplasm_mask.png, id=81, 865.2325pt x 853.1875pt>
 File: cytoplasm_mask.png Graphic file (type png)
 <use cytoplasm_mask.png>
 Package pdftex.def Info: cytoplasm_mask.png  used on input line 115.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<combined_mask.png, id=74, 865.2325pt x 853.1875pt>
+<combined_mask.png, id=82, 865.2325pt x 853.1875pt>
 File: combined_mask.png Graphic file (type png)
 <use combined_mask.png>
 Package pdftex.def Info: combined_mask.png  used on input line 119.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
-<final_mask.png, id=75, 865.2325pt x 853.1875pt>
+<final_mask.png, id=83, 865.2325pt x 853.1875pt>
 File: final_mask.png Graphic file (type png)
 <use final_mask.png>
 Package pdftex.def Info: final_mask.png  used on input line 122.
 (pdftex.def)             Requested size: 140.92793pt x 138.96028pt.
  [2]
-<bright_wellsite.png, id=82, 592.2125pt x 580.1675pt>
+<bright_spot.png, id=90, 748.7975pt x 593.21625pt>
+File: bright_spot.png Graphic file (type png)
+<use bright_spot.png>
+Package pdftex.def Info: bright_spot.png  used on input line 132.
+(pdftex.def)             Requested size: 234.8775pt x 186.0766pt.
+<bright_spot_labels.png, id=91, 566.115pt x 543.02875pt>
+File: bright_spot_labels.png Graphic file (type png)
+<use bright_spot_labels.png>
+Package pdftex.def Info: bright_spot_labels.png  used on input line 137.
+(pdftex.def)             Requested size: 234.8775pt x 225.29472pt.
+ [3 <./nuclei_mask.png> <./cytoplasm_mask.png> <./combined_mask.png> <./final_mask.png>]
+<bright_wellsite.png, id=106, 592.2125pt x 580.1675pt>
 File: bright_wellsite.png Graphic file (type png)
 <use bright_wellsite.png>
-Package pdftex.def Info: bright_wellsite.png  used on input line 132.
+Package pdftex.def Info: bright_wellsite.png  used on input line 148.
 (pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<bright_wellsite_outlier.png, id=83, 592.2125pt x 580.1675pt>
+<bright_wellsite_outlier.png, id=107, 592.2125pt x 580.1675pt>
 File: bright_wellsite_outlier.png Graphic file (type png)
 <use bright_wellsite_outlier.png>
-Package pdftex.def Info: bright_wellsite_outlier.png  used on input line 135.
+Package pdftex.def Info: bright_wellsite_outlier.png  used on input line 151.
 (pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<bright_wellsite_premask.png, id=84, 592.2125pt x 580.1675pt>
+<bright_wellsite_premask.png, id=108, 592.2125pt x 580.1675pt>
 File: bright_wellsite_premask.png Graphic file (type png)
 <use bright_wellsite_premask.png>
-Package pdftex.def Info: bright_wellsite_premask.png  used on input line 139.
+Package pdftex.def Info: bright_wellsite_premask.png  used on input line 155.
 (pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
-<bright_wellsite_mask.png, id=85, 592.2125pt x 580.1675pt>
+<bright_wellsite_mask.png, id=109, 592.2125pt x 580.1675pt>
 File: bright_wellsite_mask.png Graphic file (type png)
 <use bright_wellsite_mask.png>
-Package pdftex.def Info: bright_wellsite_mask.png  used on input line 142.
+Package pdftex.def Info: bright_wellsite_mask.png  used on input line 158.
 (pdftex.def)             Requested size: 140.92793pt x 138.05678pt.
- [3 <./nuclei_mask.png> <./cytoplasm_mask.png> <./combined_mask.png> <./final_mask.png>]
-<zoomed.png, id=101, 619.31375pt x 482.80376pt>
+ [4 <./bright_spot.png> <./bright_spot_labels.png>]
+<zoomed.png, id=120, 619.31375pt x 482.80376pt>
 File: zoomed.png Graphic file (type png)
 <use zoomed.png>
-Package pdftex.def Info: zoomed.png  used on input line 176.
+Package pdftex.def Info: zoomed.png  used on input line 192.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<gauss_blur_1.png, id=102, 619.31375pt x 482.80376pt>
+<gauss_blur_1.png, id=121, 619.31375pt x 482.80376pt>
 File: gauss_blur_1.png Graphic file (type png)
 <use gauss_blur_1.png>
-Package pdftex.def Info: gauss_blur_1.png  used on input line 180.
+Package pdftex.def Info: gauss_blur_1.png  used on input line 196.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<gauss_blur_2.png, id=103, 619.31375pt x 482.80376pt>
+<gauss_blur_2.png, id=122, 619.31375pt x 482.80376pt>
 File: gauss_blur_2.png Graphic file (type png)
 <use gauss_blur_2.png>
-Package pdftex.def Info: gauss_blur_2.png  used on input line 183.
+Package pdftex.def Info: gauss_blur_2.png  used on input line 199.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<gauss_blur_4.png, id=104, 619.31375pt x 482.80376pt>
+<gauss_blur_4.png, id=123, 619.31375pt x 482.80376pt>
 File: gauss_blur_4.png Graphic file (type png)
 <use gauss_blur_4.png>
-Package pdftex.def Info: gauss_blur_4.png  used on input line 187.
+Package pdftex.def Info: gauss_blur_4.png  used on input line 203.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<gauss_blur_8.png, id=105, 619.31375pt x 482.80376pt>
+<gauss_blur_8.png, id=124, 619.31375pt x 482.80376pt>
 File: gauss_blur_8.png Graphic file (type png)
 <use gauss_blur_8.png>
-Package pdftex.def Info: gauss_blur_8.png  used on input line 190.
+Package pdftex.def Info: gauss_blur_8.png  used on input line 206.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
- [4 <./bright_wellsite.png> <./bright_wellsite_outlier.png> <./bright_wellsite_premask.png> <./bright_wellsite_mask.png>]
+ [5 <./bright_wellsite.png> <./bright_wellsite_outlier.png> <./bright_wellsite_premask.png> <./bright_wellsite_mask.png>]
 File: zoomed.png Graphic file (type png)
 <use zoomed.png>
-Package pdftex.def Info: zoomed.png  used on input line 205.
+Package pdftex.def Info: zoomed.png  used on input line 221.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_hessian_xx.png, id=119, 619.31375pt x 482.80376pt>
+<zoomed_hessian_xx.png, id=138, 619.31375pt x 482.80376pt>
 File: zoomed_hessian_xx.png Graphic file (type png)
 <use zoomed_hessian_xx.png>
-Package pdftex.def Info: zoomed_hessian_xx.png  used on input line 209.
+Package pdftex.def Info: zoomed_hessian_xx.png  used on input line 225.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_hessian_xy.png, id=120, 619.31375pt x 482.80376pt>
+<zoomed_hessian_xy.png, id=139, 619.31375pt x 482.80376pt>
 File: zoomed_hessian_xy.png Graphic file (type png)
 <use zoomed_hessian_xy.png>
-Package pdftex.def Info: zoomed_hessian_xy.png  used on input line 212.
+Package pdftex.def Info: zoomed_hessian_xy.png  used on input line 228.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_hessian_yy.png, id=121, 619.31375pt x 482.80376pt>
+<zoomed_hessian_yy.png, id=140, 619.31375pt x 482.80376pt>
 File: zoomed_hessian_yy.png Graphic file (type png)
 <use zoomed_hessian_yy.png>
-Package pdftex.def Info: zoomed_hessian_yy.png  used on input line 215.
+Package pdftex.def Info: zoomed_hessian_yy.png  used on input line 231.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_4_1.png, id=122, 619.31375pt x 482.80376pt>
+<zoomed_texture_4_1.png, id=141, 619.31375pt x 482.80376pt>
 File: zoomed_texture_4_1.png Graphic file (type png)
 <use zoomed_texture_4_1.png>
-Package pdftex.def Info: zoomed_texture_4_1.png  used on input line 219.
+Package pdftex.def Info: zoomed_texture_4_1.png  used on input line 235.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_4_2.png, id=123, 619.31375pt x 482.80376pt>
+<zoomed_texture_4_2.png, id=142, 619.31375pt x 482.80376pt>
 File: zoomed_texture_4_2.png Graphic file (type png)
 <use zoomed_texture_4_2.png>
-Package pdftex.def Info: zoomed_texture_4_2.png  used on input line 222.
+Package pdftex.def Info: zoomed_texture_4_2.png  used on input line 238.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
- [5 <./zoomed.png> <./gauss_blur_1.png> <./gauss_blur_2.png> <./gauss_blur_4.png> <./gauss_blur_8.png>]
-<zoomed_texture_1_1.png, id=142, 619.31375pt x 482.80376pt>
+ [6 <./zoomed.png> <./gauss_blur_1.png> <./gauss_blur_2.png> <./gauss_blur_4.png> <./gauss_blur_8.png>]
+<zoomed_texture_1_1.png, id=161, 619.31375pt x 482.80376pt>
 File: zoomed_texture_1_1.png Graphic file (type png)
 <use zoomed_texture_1_1.png>
-Package pdftex.def Info: zoomed_texture_1_1.png  used on input line 237.
+Package pdftex.def Info: zoomed_texture_1_1.png  used on input line 253.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_1_2.png, id=143, 619.31375pt x 482.80376pt>
+<zoomed_texture_1_2.png, id=162, 619.31375pt x 482.80376pt>
 File: zoomed_texture_1_2.png Graphic file (type png)
 <use zoomed_texture_1_2.png>
-Package pdftex.def Info: zoomed_texture_1_2.png  used on input line 240.
+Package pdftex.def Info: zoomed_texture_1_2.png  used on input line 256.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_2_1.png, id=144, 619.31375pt x 482.80376pt>
+<zoomed_texture_2_1.png, id=163, 619.31375pt x 482.80376pt>
 File: zoomed_texture_2_1.png Graphic file (type png)
 <use zoomed_texture_2_1.png>
-Package pdftex.def Info: zoomed_texture_2_1.png  used on input line 244.
+Package pdftex.def Info: zoomed_texture_2_1.png  used on input line 260.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_2_2.png, id=145, 619.31375pt x 482.80376pt>
+<zoomed_texture_2_2.png, id=164, 619.31375pt x 482.80376pt>
 File: zoomed_texture_2_2.png Graphic file (type png)
 <use zoomed_texture_2_2.png>
-Package pdftex.def Info: zoomed_texture_2_2.png  used on input line 247.
+Package pdftex.def Info: zoomed_texture_2_2.png  used on input line 263.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
 File: zoomed_texture_4_1.png Graphic file (type png)
 <use zoomed_texture_4_1.png>
-Package pdftex.def Info: zoomed_texture_4_1.png  used on input line 251.
+Package pdftex.def Info: zoomed_texture_4_1.png  used on input line 267.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
 File: zoomed_texture_4_2.png Graphic file (type png)
 <use zoomed_texture_4_2.png>
-Package pdftex.def Info: zoomed_texture_4_2.png  used on input line 254.
+Package pdftex.def Info: zoomed_texture_4_2.png  used on input line 270.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_8_1.png, id=146, 619.31375pt x 482.80376pt>
+<zoomed_texture_8_1.png, id=165, 619.31375pt x 482.80376pt>
 File: zoomed_texture_8_1.png Graphic file (type png)
 <use zoomed_texture_8_1.png>
-Package pdftex.def Info: zoomed_texture_8_1.png  used on input line 258.
+Package pdftex.def Info: zoomed_texture_8_1.png  used on input line 274.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
-<zoomed_texture_8_2.png, id=147, 619.31375pt x 482.80376pt>
+<zoomed_texture_8_2.png, id=166, 619.31375pt x 482.80376pt>
 File: zoomed_texture_8_2.png Graphic file (type png)
 <use zoomed_texture_8_2.png>
-Package pdftex.def Info: zoomed_texture_8_2.png  used on input line 261.
+Package pdftex.def Info: zoomed_texture_8_2.png  used on input line 277.
 (pdftex.def)             Requested size: 140.92793pt x 109.8638pt.
- [6 <./zoomed_hessian_xx.png> <./zoomed_hessian_xy.png> <./zoomed_hessian_yy.png> <./zoomed_texture_4_1.png> <./zoomed_texture_4_2.png>] [7 <./zoomed_texture_1_1.png> <./zoomed_texture_1_2.png> <./zoomed_texture_2_1.png> <./zoomed_texture_2_2.png> <./zoomed_texture_8_1.png> <./zoomed_texture_8_2.png>] [8] (./writeup.aux)
+ [7 <./zoomed_hessian_xx.png> <./zoomed_hessian_xy.png> <./zoomed_hessian_yy.png> <./zoomed_texture_4_1.png> <./zoomed_texture_4_2.png>] [8 <./zoomed_texture_1_1.png> <./zoomed_texture_1_2.png> <./zoomed_texture_2_1.png> <./zoomed_texture_2_2.png> <./zoomed_texture_8_1.png> <./zoomed_texture_8_2.png>]
+<y_true.png, id=203, 619.31375pt x 482.80376pt>
+File: y_true.png Graphic file (type png)
+<use y_true.png>
+Package pdftex.def Info: y_true.png  used on input line 302.
+(pdftex.def)             Requested size: 234.8775pt x 183.10635pt.
+<y_pred.png, id=204, 619.31375pt x 482.80376pt>
+File: y_pred.png Graphic file (type png)
+<use y_pred.png>
+Package pdftex.def Info: y_pred.png  used on input line 307.
+(pdftex.def)             Requested size: 234.8775pt x 183.10635pt.
+ [9 <./y_true.png> <./y_pred.png>]
+<overlayed.png, id=214, 704.6325pt x 558.085pt>
+File: overlayed.png Graphic file (type png)
+<use overlayed.png>
+Package pdftex.def Info: overlayed.png  used on input line 360.
+(pdftex.def)             Requested size: 422.77664pt x 334.84508pt.
+ [10]
+<well_results.png, id=223, 608.2725pt x 481.8pt>
+File: well_results.png Graphic file (type png)
+<use well_results.png>
+Package pdftex.def Info: well_results.png  used on input line 376.
+(pdftex.def)             Requested size: 328.82707pt x 260.46219pt.
+ [11 <./overlayed.png>] [12 <./well_results.png>] (./writeup.aux)
 Package rerunfilecheck Info: File `writeup.out' has not changed.
-(rerunfilecheck)             Checksum: 01B11279BE70A3F8E3C385E2C64DA30A;1044.
+(rerunfilecheck)             Checksum: 02DFE2689584B19AE8345B8138B286F7;1230.
  ) 
 Here is how much of TeX's memory you used:
- 25074 strings out of 479729
- 465666 string characters out of 5880774
- 722992 words of memory out of 5000000
- 42538 multiletter control sequences out of 15000+600000
- 482525 words of font info for 76 fonts, out of 8000000 for 9000
+ 25154 strings out of 479729
+ 467016 string characters out of 5880774
+ 723477 words of memory out of 5000000
+ 42595 multiletter control sequences out of 15000+600000
+ 484995 words of font info for 85 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  99i,10n,94p,554b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on writeup.pdf (8 pages, 5093309 bytes).
+</usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on writeup.pdf (12 pages, 7894498 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
