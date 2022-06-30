@@ -1,10 +1,22 @@
 // macos
 .DS_Store
 
-// notebook checkpoints
-.ipynb_checkpoints
-
 // datasets
 -condensates_11757-11758_polyICno
 +condensates_11757-11758_polyICyes
 KRD-MOA-OC43-220310-3720-22-1_Plate_13187
+
+// latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out
+
+// python
+__pycache__
+*.pyc
+.ipynb_checkpoints
+
+
